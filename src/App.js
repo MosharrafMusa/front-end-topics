@@ -1,9 +1,10 @@
 import './App.css';
+import LearnJSX from './components/LearnJSX'
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello world</h1>
+      <LearnJSX/>
     </div>
   );
 }
