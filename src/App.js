@@ -1,13 +1,15 @@
 import './App.css';
-import LearnJSX from './components/LearnJSX'
-import LearnProps from './components/LearnProps';
+// import LearnJSX from './components/LearnJSX'
+// import LearnProps from './components/LearnProps';
+import Greet from './components/Greet'
 
 
 function App(props) {
   return (
     <div className="App">
-      <LearnJSX/>
-      <LearnProps age='30'/>
+      <Greet/>
+      {/* <LearnJSX/>
+      <LearnProps age='30'/> */}
     </div>
   );
 }
