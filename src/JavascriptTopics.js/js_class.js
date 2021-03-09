@@ -8,6 +8,12 @@ class Developer {
         return this.firstname + ' '+ this.lastname
     }
 }
+class ReactDeveloper extends Developer{
+    getJob(){
+        return 'React Developer'
+    }
+}
 
 var me = new Developer('Mosharraf', 'Musa')
 console.log(me.getName())
+console.log(me.getJob())

@@ -3,15 +3,13 @@ import './App.css';
 // import LearnProps from './components/LearnProps';
 import Greeting from './components/Greet'
 import Welcome from './components/Welcome'
+import Counter from './components/Counter'
 
 
 function App(props) {
   return (
     <div className="App">
-      <Greeting/>
-      {/* <LearnJSX/>
-      <LearnProps age='30'/> */}
-      <Welcome/>
+      <Counter/>
     </div>
   );
 }
