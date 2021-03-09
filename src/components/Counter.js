@@ -1,15 +1,28 @@
 import React, {useState} from 'react'
 
-function Counter() {
-    const [count, setCount] = useState(0)
-   
+const Counter=() =>{
+    const [searchTerm, setSearchTerm] = useState('');
 
-    return (
-        <div>
-            <h2>You have clicked <span>{count } </span>times</h2>
-            <button onClick={()=>setCount(count+1)}>Click here</button>
-        </div>
+  const handleChange = event => {
+    setSearchTerm(event.target.value);
+  };
+
+  return (
+    <div>
+      <h1>My Hacker Stories</h1>
+
+      <label htmlFor="search">Search: </label>
+      <input id="search" type="text" onChange={handleChange} />
+
+      <p>
+        Searching for <strong>{searchTerm}</strong>.
+      </p>
+
+ </div>
+         
     )
-}
+   
+  }
+  
 
-export default Counter
+export default Counter;
