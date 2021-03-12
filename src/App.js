@@ -12,7 +12,7 @@ function App(props) {
   
   return (
     <div className="App">
-      <Counter/>
+      <Counter initialCount='0'/>
     </div>
   );
 }

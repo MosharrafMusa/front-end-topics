@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function Counter() {
-  return (
-    <div>
-      <button>Decrease</button>
-      <span>0</span>
-      <button>Increase</button>
-    </div>
-  )
+class Counter extends Component {
+  constructor(props){
+    super()
+    this.state = {
+      count:props.initialCount
+    }
+  }
+  render() {
+    return (
+      <div>
+        <button>-</button>
+        <span>{this.props.initialCount}</span>
+        <button>+</button>
+      </div>
+    )
+  }
 }
 
 export default Counter
+
 
