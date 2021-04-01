@@ -6,13 +6,14 @@ import Welcome from './components/Welcome'
 import Counter from './components/Counter'
 import Moods from './components/Moods'
 import Counter_4 from './components/Counter_4'
+import CounterHook from './hooks/CounterHook'
 
 
 function App(props) {
   
   return (
     <div className="App">
-      <Counter initialCount='0'/>
+      <CounterHook initialCount={5}/>
     </div>
   );
 }
