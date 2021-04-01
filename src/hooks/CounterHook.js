@@ -1,17 +1,16 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 
-
+import {ThemeContext} from '../App'
 
 const CounterHook = ({initialCount})=>{
  const [count, setCount] = useState(initialCount)
+ const style = useContext(ThemeContext)
 
- function handleClick(){
-     setCount(count + 1)
- }
     return(
      <>
      <h3>React Counter: {count} </h3>
-     <button onClick={handleClick}>Increase</button>
+     <button style={style}
+     onClick={()=>setCount(prevCount=>prevCount + 1)}>Increase</button>
      </>
     )
 }
