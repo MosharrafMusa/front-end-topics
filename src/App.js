@@ -8,7 +8,7 @@ import Moods from './components/Moods'
 import Counter_4 from './components/Counter_4'
 import CounterHook from './hooks/CounterHook'
 
-const ThemeContext = React.createContext()
+export const ThemeContext = React.createContext()
 
 
 function App(props) {
