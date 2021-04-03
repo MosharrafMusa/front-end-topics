@@ -14,13 +14,12 @@ const FetchData = () => {
     return (
         <div>
             <h2>Todo list</h2>
-            {todos && todos.map(todo=>{
+            {todos && todos.slice(0,10).map(todo=>{
                 const {id, userId, title}= todo;
                 return (
-                    <div key={id}>
+                    <div key={id} style={{backgroundColor:'grey', width:'200px'}}>
                         <h4>{title}</h4>
                         <h5>{userId}</h5>
-
                     </div>
                 )
             })}
