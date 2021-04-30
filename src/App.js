@@ -1,5 +1,5 @@
 import React from 'react'
-import FetchData from './hooks/FetchData'
+import Test1 from './components/advanceTopics/Test1'
 
 
 
@@ -7,7 +7,7 @@ const App = () => {
  
   return (
     <div>
-      <FetchData />
+      <Test1 />
     </div>
   )
 }
