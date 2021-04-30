@@ -6,7 +6,7 @@ const { Title } = Typography;
 const { Panel } = Collapse;
 
 
-const Test1 = () => {
+const Test1 = ({ques, text}) => {
     return (
         <>
       <Layout>
@@ -24,15 +24,12 @@ const Test1 = () => {
               className="container-parent-faq"
             >
               <Panel
-                header="This is the first question ?"
+        header="This is the second question ?"
                 key="1"
                 className="panel-parent-faq"
               >
                 <p>
-                  {' '}
-                  All the Lorem Ipsum generators on the Internet tend to repeat
-                  predefined chunks as necessary, making this the first true
-                  generator on the Internet.
+                  {text}
                 </p>
               </Panel>
               <Panel
