@@ -1,11 +1,12 @@
 import React from 'react'
 
 import {Collapse, Layout, Typography} from 'antd'
+import { CaretRightOutlined } from '@ant-design/icons';
 const { Title } = Typography;
 const { Panel } = Collapse;
 
 
-export const Test1 = () => {
+const Test1 = () => {
     return (
         <>
       <Layout>
@@ -65,5 +66,6 @@ export const Test1 = () => {
     </>
   );
 };
-    
+ 
+export default Test1;
 
