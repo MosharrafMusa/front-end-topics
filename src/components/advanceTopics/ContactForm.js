@@ -5,28 +5,29 @@ import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';
 
 const { Option } = Select;
 
-const areas = [
-  { label: 'Beijing', value: 'Beijing' },
-  { label: 'Shanghai', value: 'Shanghai' },
-];
 
-const sights = {
-  Beijing: ['Tiananmen', 'Great Wall'],
-  Shanghai: ['Oriental Pearl', 'The Bund'],
-};
-
-const Demo = () => {
-  const [form] = Form.useForm();
-
-  const onFinish = values => {
-    console.log('Received values of form:', values);
-  };
-
-  const handleChange = () => {
-    form.setFieldsValue({ sights: [] });
-  };
 
 const ContactForm = () => {
+    const areas = [
+        { label: 'Beijing', value: 'Beijing' },
+        { label: 'Shanghai', value: 'Shanghai' },
+      ];
+      
+      const sights = {
+        Beijing: ['Tiananmen', 'Great Wall'],
+        Shanghai: ['Oriental Pearl', 'The Bund'],
+      };
+      
+      const Demo = () => {
+        const [form] = Form.useForm();
+      
+        const onFinish = values => {
+          console.log('Received values of form:', values);
+        };
+      
+        const handleChange = () => {
+          form.setFieldsValue({ sights: [] });
+        };
     return (
         <>
            <Form form={form} name="dynamic_form_nest_item" onFinish={onFinish} autoComplete="off">
