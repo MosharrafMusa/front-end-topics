@@ -5,12 +5,15 @@ const { TextArea } = Input;
 
 function AppContact() {
   return (
+   
     <div id="contact" className="block contactBlock">
-      <div className="container-fluid">
+      <h2>CONTACT US</h2>
+        <div className="container-fluid">
         <div className="titleHolder">
           <h2>Get in Touch</h2>
           <p>Dolore nam rerum obcaecati fugit odio nobis Molestiae rerum</p>
         </div>
+        
         <Form
           name="normal_login"
           className="login-form"
@@ -45,7 +48,7 @@ function AppContact() {
           <Form.Item
             name="telephone"
           >
-            <Input placeholder="Telephone" />
+            <Input placeholder="Phone (Optional)" />
           </Form.Item>
           <Form.Item
             name="subject"
@@ -58,20 +61,13 @@ function AppContact() {
             <TextArea placeholder="Message" />
           </Form.Item>
           <Form.Item>
-            <Form.Item 
-              name="remember" 
-              valuePropName="checked"
-              noStyle
-              rules={[
-                { validator:(_, value) => value ? Promise.resolve() : Promise.reject('Should accept agreement') },
-              ]}
+            <Button 
+            type="default"
+            htmlType="submit"
+            className= "my-button"
+            size="large"
             >
-              <Checkbox>I agree with terms and conditions.</Checkbox>
-            </Form.Item>
-          </Form.Item>
-          <Form.Item>
-            <Button type="primary" htmlType="submit" className="login-form-button">
-              Submit
+            Submit
             </Button>
           </Form.Item>
         </Form>

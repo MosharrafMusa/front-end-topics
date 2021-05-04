@@ -5,14 +5,16 @@ general
 body {
   font-size: 16px;
   line-height: 1.6;
-  color: rgb(50, 4, 134);
+  color: rgb(17, 12, 26);
   overflow-x: hidden;
 }
 
 .container-fluid {
   margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 15px;
+  max-width: 800px;
+  padding: 20px 15px;
+  background-color: #9be1df;
+  color: #262626;
 }
 
 .ant-layout {
@@ -46,17 +48,6 @@ title holder
   margin: 0 0 40px;
 }
 
-.titleHolder:after {
-  transform: translateX(-50%);
-  content: "";
-  background: #1890ff;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  height: 3px;
-  width: 50px;
-}
-
 .titleHolder h2 {
   font-size: 28px;
   margin: 0;
@@ -67,13 +58,19 @@ contact
 -------
 */
 .contactBlock .ant-form {
-  max-width: 1200px;
+  max-width: 700px;
   margin: auto;
 }
 
 .contactBlock .ant-form textarea {
   min-height: 120px;
   height: 120px;
+}
+
+.my-button {
+  background-color: #eb9408 !important;
+  color: #fff !important;
+  border: none;
 }
 
 /* 
