@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './App.css';
 import './index.css';
+import { env } from './config';
 
 
 ReactDOM.render
    (
-    <App/>,
+    <App env={env}/>,
     document.getElementById('root')
   )
