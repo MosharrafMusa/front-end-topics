@@ -32,7 +32,7 @@ const ContactForm2 = () => {
         <input
           type="text"
           name="name"
-          className="contact-form-inputs"/>
+          />
         </div>
 
         <div className="singleItem">
@@ -42,28 +42,28 @@ const ContactForm2 = () => {
         <input
           type="email"
           name="email"
-          className="contact-form-inputs"/>
+          />
         </div>
 
         <div className="singleItem">
         <label>
           <p>Subject</p>
         </label>
-        <input type="text" name="subject" className="contact-form-inputs" />
+        <input type="text" name="subject" />
         </div>
 
         <div className="singleItem">
         <label>
           <p>Message</p>
         </label>
-        <textarea name="message" className="contact-form-message"/>
+        <textarea name="message" />
         </div>
 
-        <div className="contact-button-container">
+        <div className="btn">
           <input
             type="submit"
-            value="Send"
-            className="contact-form-submit-button"/>
+            value="Submit"
+            />
         </div>
       </form>
     </div>

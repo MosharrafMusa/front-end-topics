@@ -1,18 +1,15 @@
 .container {
-  background-color: aquamarine;
   margin: 100px auto;
-  width: 90%;
+  max-width: 80%;
+  padding: 20px 15px;
+  background-color: #9be1df;
+  color: #262626;
   box-shadow: 1px 1px 4px 1px lightgray;
-}
-
-.container form {
-  width: 100%;
-  padding: 25px;
 }
 
 .container label {
   display: block;
-  width: 90%;
+  width: 80%;
   letter-spacing: 0.1 rem;
   font-style: italic;
   margin-bottom: 3px;
@@ -21,10 +18,12 @@
 
 .container input,
 .container textarea {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   padding: 10px;
   border: none;
+  position: relative;
+  z-index: 1;
   box-shadow: 1px 1px 4px 1px rgb(58, 57, 57);
 }
 .container textarea {
@@ -37,5 +36,23 @@
 }
 
 .singleItem {
-  margin: 10px 0;
+  margin: 10px auto;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+}
+.btn input {
+  width: 150px;
+  font-size: 18px;
+  letter-spacing: 0.2rem;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  margin-top: 5px;
 }
