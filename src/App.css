@@ -1,98 +1,41 @@
-/* 
-general 
--------
-*/
-body {
-  font-size: 16px;
-  line-height: 1.6;
-  color: rgb(17, 12, 26);
-  overflow-x: hidden;
+.container {
+  background-color: aquamarine;
+  margin: 100px auto;
+  width: 90%;
+  box-shadow: 1px 1px 4px 1px lightgray;
 }
 
-.container-fluid {
+.container form {
+  width: 100%;
+  padding: 25px;
+}
+
+.container label {
+  display: block;
+  width: 90%;
+  letter-spacing: 0.1 rem;
+  font-style: italic;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+
+.container input,
+.container textarea {
+  width: 90%;
   margin: 0 auto;
-  max-width: 800px;
-  padding: 20px 15px;
-  background-color: #9be1df;
-  color: #262626;
+  padding: 10px;
+  border: none;
+  box-shadow: 1px 1px 4px 1px rgb(58, 57, 57);
 }
-
-.ant-layout {
-  background: #fff !important;
-}
-
-.mainLayout .ant-layout-header {
-  background: #f8f8f8;
-  padding: 0;
-  height: auto;
-  line-height: 1.6;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.bgGray {
-  background: #fafafa;
-}
-
-/* 
-title holder
-------------
-*/
-.titleHolder {
-  text-align: center;
-  position: relative;
-  padding: 0 0 20px;
-  margin: 0 0 40px;
-}
-
-.titleHolder h2 {
-  font-size: 28px;
-  margin: 0;
-}
-
-/* 
-contact
--------
-*/
-.contactBlock .ant-form {
-  max-width: 700px;
-  margin: auto;
-}
-
-.contactBlock .ant-form textarea {
-  min-height: 120px;
+.container textarea {
   height: 120px;
 }
 
-.my-button {
-  background-color: #eb9408 !important;
-  color: #fff !important;
-  border: none;
+.container input:focus,
+.container textarea:focus {
+  box-shadow: 1px 1px 4px 1px rgb(49, 170, 240);
 }
 
-/* 
-responsive
-----------
-*/
-@media only screen and (max-width: 991px) {
-  .pricingBlock .ant-row > div:nth-child(2) .ant-list-item {
-    transform: scale(1.14);
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .pricingBlock .ant-row > div:nth-child(2) .ant-list-item {
-    transform: scale(1);
-  }
-
-  .mobileVisible {
-    display: block;
-  }
-
-  .mobileHidden {
-    display: none;
-  }
+.singleItem {
+  margin: 10px 0;
 }
