@@ -9,7 +9,10 @@ const ContactForm2 = () => {
     function sendEmail(e) {
         e.preventDefault();
     
-        emailjs.sendForm('service_ghtt1eb', 'template_pk79pf6', e.target, 'user_pcz2czADtm5ala9BrkUqS')
+        emailjs.sendForm(process.env.REACT_APP_EMAILJS_RECEIVER,
+           process.env.REACT_APP_EMAILJS_TEMPLATEID,
+            e.target, 
+            process.env.REACT_APP_EMAILJS_USERID)
           .then((result) => {
               console.log(result.text);
           }, (error) => {
