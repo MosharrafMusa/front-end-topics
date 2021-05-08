@@ -1,3 +1,7 @@
+*html {
+  font-size: 62.5%;
+}
+
 .container {
   margin: 100px auto;
   max-width: 80%;
@@ -55,4 +59,23 @@
   transition: all 0.5s ease-in-out;
   position: relative;
   margin-top: 5px;
+}
+
+.card {
+  width: 66%;
+  background-color: #f4fafa;
+  position: relative;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+.ant-card-head-title {
+  font-size: clamp(1.25rem, 2.2vw, 2rem);
+  font-weight: 500;
+}
+
+.ant-card-body {
+  letter-spacing: inherit;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: clamp(1rem, 2vw, 1.5rem);
 }
