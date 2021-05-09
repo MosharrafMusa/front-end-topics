@@ -63,11 +63,15 @@
 
 .card {
   width: 66%;
-  background-color: #f4fafa;
+  background-color: hsla(0, 0%, 100%, 0.4);
   position: relative;
-  margin: 20px auto;
+  margin: 30px auto;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 16px;
+  font-size: 24px;
+  font-family: "open-sans";
+  font-weight: 600;
+  color: #4b5151;
 }
 .ant-card-head-title {
   font-size: clamp(1.25rem, 2.2vw, 2rem);
@@ -76,6 +80,12 @@
 
 .ant-card-body {
   letter-spacing: inherit;
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  line-height: clamp(1rem, 2vw, 1.5rem);
+  /* font-size: clamp(1rem, 2vw, 1.5rem); */
+  font-size: 18px;
+  line-height: 28px;
+  background-color: #f5f5f5;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #2d2a2b;
+  border-radius: 16px;
 }
