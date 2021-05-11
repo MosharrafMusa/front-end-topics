@@ -1,9 +1,35 @@
 import React from 'react'
-import {Layout, Card } from 'antd';
+import {Layout, Card,Row,Col, Button} from 'antd';
+import img1 from './img1.png'
+
+
 
 const Faq = () => {
     return (
         <>
+      <Layout>
+    <div className="site-card-border-less-wrapper" >
+    <Row className="card" >
+      <Col span={16} className="col-btn">
+        <Row>
+          <h4 style={{color:'#878D93', fontWeight:'700'}}>FREQUENTLY ASKED QUESTIONS</h4>
+        </Row>
+        <div className="btn-group">
+      <Row>
+      <Button type="default" style={{backgroundColor:"#fbfbfb"}}>Game Play</Button>
+      <Button type="default" style={{backgroundColor:"#fbfbfb"}}>Child Profile Management</Button>
+      </Row> 
+      <Row>
+      <Button type="default" style={{backgroundColor:"#fbfbfb"}}>Account Setting</Button>
+      <Button type="default" style={{backgroundColor:"#fbfbfb"}}>Technical Support</Button>
+      </Row> 
+      </div>
+      </Col>
+      <Col span={8} type = 'flex' style={{alignItems:'center'}} justfy='center'>
+      <img style={{position:'absolute', overflow:'scroll'}} alt="example" src={img1}/>
+      </Col>
+    </Row>
+    </div>
     <div className="site-card-border-less-wrapper">
     <Card title="Game Play + Content" className="card" bordered={false} >
         <p>1. STAR: Is Story Squad safe and appropriate for my children?</p>
@@ -42,6 +68,7 @@ const Faq = () => {
         <p>6. Will my children's progress sync across all devices registered to their account?</p>
     </Card>
   </div>
+  </Layout>
   </>
     )
 }

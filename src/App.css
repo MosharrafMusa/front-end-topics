@@ -1,69 +1,15 @@
+@import "~antd/dist/antd.css";
+
 *html {
   font-size: 62.5%;
 }
 
-.container {
-  margin: 100px auto;
-  max-width: 80%;
-  padding: 20px 15px;
-  background-color: #9be1df;
-  color: #262626;
-  box-shadow: 1px 1px 4px 1px lightgray;
+.ant-layout {
+  background-color: #fff;
 }
-
-.container label {
-  display: block;
-  width: 80%;
-  letter-spacing: 0.1 rem;
-  font-style: italic;
-  margin-bottom: 3px;
-  font-weight: 600;
-}
-
-.container input,
-.container textarea {
-  width: 100%;
-  margin: 0 auto;
-  padding: 10px;
-  border: none;
-  position: relative;
-  z-index: 1;
-  box-shadow: 1px 1px 4px 1px rgb(58, 57, 57);
-}
-.container textarea {
-  height: 120px;
-}
-
-.container input:focus,
-.container textarea:focus {
-  box-shadow: 1px 1px 4px 1px rgb(49, 170, 240);
-}
-
-.singleItem {
-  margin: 10px auto;
-  margin-right: 20px;
-  padding: 10px;
-}
-
-.btn {
-  width: 100%;
-  text-align: center;
-}
-.btn input {
-  width: 150px;
-  font-size: 18px;
-  letter-spacing: 0.2rem;
-  padding: 5px 10px;
-  border: 1px solid transparent;
-  outline: none;
-  transition: all 0.5s ease-in-out;
-  position: relative;
-  margin-top: 5px;
-}
-
 .card {
   width: 66%;
-  background-color: hsla(0, 0%, 100%, 0.4);
+  background-color: #fbfbfb;
   position: relative;
   margin: 30px auto;
   padding: 20px;
@@ -71,21 +17,65 @@
   font-size: 24px;
   font-family: "open-sans";
   font-weight: 600;
-  color: #4b5151;
+  color: #2d2a2b;
 }
 .ant-card-head-title {
-  font-size: clamp(1.25rem, 2.2vw, 2rem);
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #4b5151;
 }
 
 .ant-card-body {
-  letter-spacing: inherit;
   /* font-size: clamp(1rem, 2vw, 1.5rem); */
   font-size: 18px;
   line-height: 28px;
-  background-color: #f5f5f5;
+  background-color: #fbfbfb;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   color: #2d2a2b;
+}
+
+.ant-btn {
+  background: #fbfbfb;
+  /* Text/Dark Gray */
+  border: 0.5px solid #4b5151;
+  box-sizing: border-box;
   border-radius: 16px;
+  margin: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #4b5151;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  padding: 10px;
+  justify-items: left;
+}
+
+.ant-btn-default {
+  background-color: #fbfbfb;
+}
+
+.ant-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ant-col-16 {
+  flex: 66%;
+}
+.ant-col-8 {
+  flex: 33%;
+}
+
+@media (max-width: 800px) {
+  .ant-col-16,
+  .ant-col-8 {
+    flex: 100%;
+  }
 }
