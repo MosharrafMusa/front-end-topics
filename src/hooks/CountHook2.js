@@ -1,25 +1,14 @@
 import React from 'react'
 
-const CountHook2 = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
-
-export default CountHook2
-
-function Greeting(props) {
-    const isLoggedIn = props.isLoggedIn;
-    if (isLoggedIn) {
-      return <UserGreeting />;
-    }
-    return <GuestGreeting />;
-  }
+const AddToCart = ({ available }) => {
+    if (!available) return null;
   
-  ReactDOM.render(
-    // Try changing to isLoggedIn={true}:
-    <Greeting isLoggedIn={false} />,
-    document.getElementById('root')
-  );
+    return (
+      <div className="full tr">
+        <button className="product--cart-button">Add to Cart</button>
+      </div>
+    );
+  };
+
+
+export default AddToCart;
