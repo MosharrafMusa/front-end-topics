@@ -6,7 +6,7 @@ const GuestGreetings=(props)=>{
   return <h1>Please sign up</h1>
   }
 
-  const Greetings=(props)=>{
+  export const Greetings=(props)=>{
     const isLoggedIn = props.isLoggedIn
     if (isLoggedIn){
       return <UserGreetings/>;

@@ -9,6 +9,6 @@ import {Greetings} from './App'
 
 ReactDOM.render
    (
-    <Greetings isLoggedIn={true}/>,
+    <Greetings isLoggedIn={false}/>,
     document.getElementById('root')
   )
