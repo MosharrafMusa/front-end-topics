@@ -1,16 +1,16 @@
-const UserGreetings=(props)=>{
-return <h1>Welcome back!</h1>
+import List from './components/conditionalRendering/List'
+
+const users = [
+  { id: '1', firstName: 'Robin', lastName: 'Wieruch' },
+  { id: '2', firstName: 'Dennis', lastName: 'Wieruch' },
+];
+ 
+export function App() {
+  return (
+    <div>
+      <h1>Hello Conditional Rendering</h1>
+      <List list={users} />
+    </div>
+  );
 }
-
-const GuestGreetings=(props)=>{
-  return <h1>Please sign up</h1>
-  }
-
-  export const Greetings=(props)=>{
-    const isLoggedIn = props.isLoggedIn
-    if (isLoggedIn){
-      return <UserGreetings/>;
-    }
-    return <GuestGreetings/>;
-    }
-  
+ 
