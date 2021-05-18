@@ -7,8 +7,8 @@ const Contact = () => {
         <>
         <div className='"site-card-border-less-wrapper"'>
           <Row className="card">
-            <Col span={16} className="title">
-              <Row>
+            <Col span={16}>
+              <Row className="title">
                 <h4 style={{ color: '#878D93', fontWeight: '700' }}>
                   CONTACT US
                 </h4>
@@ -38,40 +38,44 @@ const Contact = () => {
           </Row>
         </div>
 
-        <div className="site-card-border-less-wrapper">
+        <div className="form-main">
         <Row className='card'>
-        <form className="Contact-Form-Container" >
-        <Row >
-        <label>
-          <p>Name</p>
-        </label>
+        <form className="contact-form-container" >
+        <Row className="form-input">
+        <Col>
+        <label for="name">
+          Name
+        </label><br/>
         <input
           type="text"
           name="name"
+          id="name"
           className="contact-form-inputs"
-
         />
-        <label>
-          <p>Email</p>
-        </label>
+        </Col>
+        <Col>
+        <label for="email">
+         Email Address
+        </label><br/>
         <input
-          type="email"
-          name="email"
-          className="contact-form-inputs"
-
+        type="email"
+        name="email"
+        id="email"
+        className="contact-form-inputs"
         />
+        </Col>
         </Row>
         <Row>
-             <label>
-          <p>Message</p>
+        <label for="message">
+        Message
         </label>
-        <textarea name="message" className="contact-form-message" />
+        <textarea id="message" name="message" className="contact-form-message" />
         </Row>
         <Row>
         <div className="contact-button-container">
-          <input
+        <input
             type="submit"
-            value="Send"
+            value="Send Message"
             className="contact-form-submit-button"
           />
         </div>

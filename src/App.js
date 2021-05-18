@@ -1,4 +1,4 @@
-import List from './components/conditionalRendering/List'
+
 import Contact from './Contact';
 
  
