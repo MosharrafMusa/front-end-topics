@@ -14,7 +14,6 @@
   font-size: 24px;
   font-family: "open-sans";
   font-weight: 600;
-
   color: #2d2a2b;
 }
 
@@ -36,10 +35,20 @@
 .form-input {
   padding: 10px;
   column-gap: 10px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .form-input input {
-  display: flex;
   justify-items: center;
   border-radius: 15px;
+  margin: 0 auto;
+}
+
+.contact-form-submit-button {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
