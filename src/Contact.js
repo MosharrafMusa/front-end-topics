@@ -1,8 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import {Col,Row} from 'antd'
 import img2 from './img2.png'
 const Contact = () => {
+  const [disable, setDisable] = useState(true);
+
+  function handleChange(event) {
+    setDisable(event.target.value === '');
+}
     return (
         <>
         <div className='"site-card-border-less-wrapper"'>
@@ -51,6 +56,7 @@ const Contact = () => {
           name="name"
           id="name"
           className="contact-form-inputs"
+          onChange={handleChange}
         />
         </Col>
         <Col>
@@ -62,6 +68,7 @@ const Contact = () => {
         name="email"
         id="email"
         className="contact-form-inputs"
+        onChange={handleChange}
         />
         </Col>
         </Row>
@@ -69,20 +76,25 @@ const Contact = () => {
         <label for="message">
         Message
         </label><br/>
-        <textarea id="message" name="message" className="contact-form-message" />
+        <textarea id="message"
+         name="message"
+        className="contact-form-message"
+        placeholder="Write your message here"
+        onChange={handleChange}
+         />
         </Row>
         <Row>
-        <input
+        <button
             type="submit"
-            value="Send Message"
+            value="SEND MESSAGE"
             className="contact-form-submit-button"
-          />
+            disabled={disable}
+          >SEND MESSAGE</button>
         </Row>
       </form>
       </Row>
     </div>
-
-        </>
+    </>
     )
 }
 
