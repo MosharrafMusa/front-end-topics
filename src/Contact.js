@@ -68,17 +68,15 @@ const Contact = () => {
         <Row>
         <label for="message">
         Message
-        </label>
+        </label><br/>
         <textarea id="message" name="message" className="contact-form-message" />
         </Row>
         <Row>
-        <div className="contact-button-container">
         <input
             type="submit"
             value="Send Message"
             className="contact-form-submit-button"
           />
-        </div>
         </Row>
       </form>
       </Row>
