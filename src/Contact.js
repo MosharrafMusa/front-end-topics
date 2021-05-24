@@ -1,13 +1,32 @@
-import React, {useState} from 'react'
-
+import React, {useState, useEffect} from 'react'
 import {Col,Row} from 'antd'
 import img2 from './img2.png'
-const Contact = () => {
-  const [disable, setDisable] = useState(true);
 
-  function handleChange(event) {
-    setDisable(event.target.value === '');
-}
+
+const Contact = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [item, setItem] = useState([])
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setItem([...item, {name:name,email:email,message:message}])
+    setName('')
+    setEmail('')
+    setMessage('')
+  };
+
+  useEffect(()=>{
+    const data = localStorage.getItem('data')
+    if(data){
+      setItem(JSON.parse(data))
+    }
+    },[])
+    
+    useEffect(()=>{
+      localStorage.setItem('data',JSON.stringify(item))
+    })
     return (
         <>
         <div className='"site-card-border-less-wrapper"'>
@@ -20,7 +39,7 @@ const Contact = () => {
               </Row>
               <div className="description">
                 <Row>
-                 <p>If you would like to let us know
+                <p>If you would like to let us know
                     how we're doing of if you are
                     experiencing issues, contact
                     us by filling in the form bellow.</p>
@@ -45,7 +64,7 @@ const Contact = () => {
 
         <div className="form-main">
         <Row className='card'>
-        <form className="contact-form-container" >
+        <form className="contact-form-container" onSubmit={handleSubmit}>
         <Row className="form-input">
         <Col>
         <label for="name">
@@ -56,19 +75,19 @@ const Contact = () => {
           name="name"
           id="name"
           className="contact-form-inputs"
-          onChange={handleChange}
+          value={name} onChange={(e) => setName(e.target.value)}
         />
         </Col>
         <Col>
         <label for="email">
-         Email Address
+          Email Address
         </label><br/>
         <input
         type="email"
         name="email"
         id="email"
         className="contact-form-inputs"
-        onChange={handleChange}
+        value={email} onChange={(e) => setEmail(e.target.value)}
         />
         </Col>
         </Row>
@@ -77,19 +96,18 @@ const Contact = () => {
         Message
         </label><br/>
         <textarea id="message"
-         name="message"
+        name="message"
         className="contact-form-message"
         placeholder="Write your message here"
-        onChange={handleChange}
-         />
+        value={message} onChange={(e) => setMessage(e.target.value)}
+        />
         </Row>
         <Row>
-        <button
+        <input
             type="submit"
             value="SEND MESSAGE"
             className="contact-form-submit-button"
-            disabled={disable}
-          >SEND MESSAGE</button>
+          />
         </Row>
       </form>
       </Row>

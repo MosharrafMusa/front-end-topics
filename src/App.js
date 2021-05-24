@@ -1,5 +1,6 @@
 
 import Contact from './Contact';
+require('dotenv').config();
 
  
  function App() {
