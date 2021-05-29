@@ -2,9 +2,9 @@ import React from 'react'
 
 const counter15 = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+          <h1>This is the main title</h1>  
+        </>
     )
 }
 
