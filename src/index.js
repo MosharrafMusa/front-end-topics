@@ -1,7 +1,9 @@
-function sayHello() {
-  for (var i = 0; i < 5; i++) {
-    console.log(i);
-  }
-  console.log(i);
-}
-sayHello();
+const person = {
+  name: "Mosh",
+  walk() {},
+  talk() {},
+};
+person.talk();
+
+const targetMember = "name";
+person[targetMember.value] = "John";
