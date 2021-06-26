@@ -1,7 +1,11 @@
-function App() {
-  for (var i = 0; i < 5; i++) console.log(i);
-}
+import React from "react";
 
-App();
+const App = () => {
+  return (
+    <div>
+      <h1>welcome from react</h1>
+    </div>
+  );
+};
 
 export default App;
