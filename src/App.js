@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import data from "./data.json";
+// components
+import Header from "./components/Header";
+import ToDoList from "./components/ToDoList";
 
 const App = () => {
+  const [toDoList, setToDoList] = useState(data);
+
   return (
     <div>
-      <h1>welcome from react</h1>
+      <Header />
+      <ToDoList toDoList={toDoList} />
     </div>
   );
 };
