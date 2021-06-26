@@ -1,9 +1,4 @@
-const person = {
-  name: "Mosh",
-  walk() {},
-  talk() {},
-};
-person.talk();
-
-const targetMember = "name";
-person[targetMember.value] = "John";
+lists = [2, 4, 6, 5, 9];
+const result = lists.map((list) => {
+  <li>list * 2</li>;
+});
