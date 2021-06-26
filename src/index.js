@@ -1,4 +1,7 @@
-lists = [2, 4, 6, 5, 9];
-const result = lists.map((list) => {
-  <li>list * 2</li>;
-});
+const array1 = [1, 4, 9, 16];
+
+// pass a function to map
+const map1 = array1.map((x) => x + 2);
+
+console.log(map1);
+// expected output: Array [2, 8, 18, 32]
