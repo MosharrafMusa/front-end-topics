@@ -30,6 +30,10 @@ function App() {
     setTodos(newTodos);
   };
 
+  const editTodo = (index) => {
+    const newTodos = [...todos];
+  };
+
   const removeTodo = (index) => {
     const newTodos = [...todos];
     newTodos.splice(index, 1);
@@ -46,6 +50,7 @@ function App() {
             todo={todo}
             completeTodo={completeTodo}
             removeTodo={removeTodo}
+            editTodo={editTodo}
           />
         ))}
         <TodoForm addTodo={addTodo} />
