@@ -1,83 +1,24 @@
-@import "~antd/dist/antd.css";
-
-.ant-layout {
-  background-color: #fff;
+.app {
+  background: #209cee;
+  height: 100vh;
+  padding: 30px;
 }
 
-.card {
-  width: 66%;
-  background-color: #fbfbfb;
-  position: relative;
-  margin: 30px auto;
-  padding: 20px;
-  border-radius: 16px;
-  font-family: sans-serif;
-  font-weight: 600;
-  color: #4b5151;
+.todo-list {
+  background: #e8e8e8;
+  border-radius: 4px;
+  max-width: 400px;
+  padding: 5px;
 }
 
-.title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 28px;
-  color: #4b5151;
-  padding-bottom: 12px;
-}
-
-.description {
-  font-weight: 400;
-  font-size: 18px;
-  color: #4b5151;
-  font-family: sans-serif;
-}
-
-.form-input {
-  grid-column-gap: 20px;
-}
-
-.contact-form-inputs {
-  border: 0.5px solid #7b8794;
-  border-radius: 16px;
-  padding: 7px;
-  font-size: 16px;
-  width: 29vw;
-}
-
-.contact-form-container {
-  width: 100%;
-  margin: 0px 10px;
-  margin-bottom: 30px;
-}
-
-.contact-form-message {
-  border-radius: 20px;
-  height: 250px;
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-}
-
-.ant-row {
-  padding: 20px 10px;
-}
-
-.contact-form-submit-button {
-  position: absolute;
-  right: 0;
-  padding: 7px 20px;
-  margin-right: 50px;
-  border-radius: 16px;
-  background-color: #8ce2e0;
-  color: #4b5151;
-  width: 311px;
-  border: none;
-  font-size: 16px;
-  font-weight: 600;
-  font-family: sans-serif;
-  line-height: 24px;
-}
-label {
+.todo {
+  align-items: center;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  display: flex;
   font-size: 12px;
-  font-weight: 700;
-  font-family: sans-serif;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  padding: 3px 10px;
 }

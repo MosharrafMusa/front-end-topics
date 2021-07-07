@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Redux = () => {
+const Context = () => {
     return (
         <div>
-            
+            context
         </div>
     )
 }
 
-export default Redux
+export default Context

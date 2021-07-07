@@ -1,14 +1,60 @@
+import React, { useState } from "react";
+import "./App.css";
+import TodoForm from "./TodoForm";
+import Todo from "./Todo";
 
+function App() {
+  const [todos, setTodos] = useState([
+    {
+      text: "Learn about React",
+      isCompleted: false,
+    },
+    {
+      text: "Meet friend for lunch",
+      isCompleted: false,
+    },
+    {
+      text: "Build really cool todo app",
+      isCompleted: false,
+    },
+  ]);
 
-import UseStateHook from './UseStateHook';
-require('dotenv').config();
+  const addTodo = (text) => {
+    const newTodos = [...todos, { text }];
+    setTodos(newTodos);
+  };
 
- 
- function App() {
+  const completeTodo = (index) => {
+    const newTodos = [...todos];
+    newTodos[index].isCompleted = true;
+    setTodos(newTodos);
+  };
+
+  const editTodo = (index) => {
+    const newTodos = [...todos];
+  };
+
+  const removeTodo = (index) => {
+    const newTodos = [...todos];
+    newTodos.splice(index, 1);
+    setTodos(newTodos);
+  };
+
   return (
-    <div>
-      <h1>how are you ?</h1>
-      <UseStateHook/>
+    <div className="app">
+      <div className="todo-list">
+        {todos.map((todo, index) => (
+          <Todo
+            key={index}
+            index={index}
+            todo={todo}
+            completeTodo={completeTodo}
+            removeTodo={removeTodo}
+            editTodo={editTodo}
+          />
+        ))}
+        <TodoForm addTodo={addTodo} />
+      </div>
     </div>
   );
 }

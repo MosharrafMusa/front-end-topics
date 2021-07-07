@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Hooks = () => {
+const learnHooks = () => {
     return (
         <div>
-            
+            hook
         </div>
     )
 }
 
-export default Hooks
+export default learnHooks
