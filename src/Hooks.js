@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Counter6() {
+const Hooks = () => {
     return (
         <div>
-            <h3>Counter6</h3>
+            
         </div>
     )
 }
 
-export default Counter6
+export default Hooks

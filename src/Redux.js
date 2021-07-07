@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Counter5() {
+const Redux = () => {
     return (
         <div>
-            <p>From c5</p>
+            
         </div>
     )
 }
 
-export default Counter5
+export default Redux

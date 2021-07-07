@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FirstComp = () => {
+const Component4 = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const FirstComp = () => {
     )
 }
 
-export default FirstComp
+export default Component4

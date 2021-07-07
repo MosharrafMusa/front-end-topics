@@ -1,15 +1,16 @@
-import React from 'react'
-import FetchData from './hooks/FetchData'
 
 
+import UseStateHook from './UseStateHook';
+require('dotenv').config();
 
-const App = () => {
  
+ function App() {
   return (
     <div>
-      <FetchData />
+      <h1>how are you ?</h1>
+      <UseStateHook/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
